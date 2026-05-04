@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Madhav Sachdeva
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ 
+      \textit{#3} & {\color{dark-grey} \small #4}\\ 
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\AtBeginDocument{\fontsize{10.8pt}{13pt}\selectfont}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Madhav Sachdeva} \\ \vspace{5pt}
+    \small \textbf{Computer Science Student | Aspiring Full Stack Developer} \\ \vspace{2pt}
+    \small \texttt{+91 97795 33777} \hspace{1pt} $|$
+    \hspace{1pt} \href{mailto:madhavsachdeva613@gmail.com}{\texttt{madhavsachdeva613@gmail.com}} \hspace{1pt} $|$ 
+    \hspace{1pt} \href{https://linkedin.com/in/madhav-sachdeva-362038234/}{\texttt{linkedin.com/in/madhav-sachdeva}} \\ \vspace{2pt}
+    \small \href{https://github.com/MadhavS123-cloud}{\texttt{github.com/MadhavS123-cloud}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://leetcode.com/u/4LxMIZA1cP/}{\texttt{leetcode.com/madhav}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://www.codechef.com/users/madhavsachdeva}{\texttt{codechef.com/madhav}}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science}{2025 -- 2029 (Expected)}
+      {First Year Student}{India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures and Algorithms, Object-Oriented Programming, Discrete Mathematics}
+        \resumeItem{Passionately learning and applying core CS concepts in personal and academic projects}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Ecommerce-Vibe}}{Mar. 2026}
+          \resumeItemListStart
+            \resumeItem{Developed a modern e-commerce platform using \textbf{React.js} and \textbf{Vite}, integrated with a \textbf{PostgreSQL} database via \textbf{RESTful APIs}}
+            \resumeItem{Implemented complex state management for shopping cart functionality including product management and persistent state}
+            \resumeItem{Leveraged \textbf{Framer Motion} for micro-animations, improving user engagement by \textbf{30\%} and reducing bounce rate by \textbf{15\%} during beta testing.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\href{https://skill-match-ai.onrender.com/}{\textbf{Skill Match AI}} $|$ \href{https://github.com/MadhavS123-cloud/Skill-Match-AI}{GitHub}}{Feb. 2026}
+          \resumeItemListStart
+            \resumeItem{Architected an AI-powered resume parsing and ATS score calculation system using \textbf{Python} and \textbf{FastAPI}}
+            \resumeItem{Integrated \textbf{PostgreSQL} for persistent storage of candidate profiles and implemented \textbf{Docker} for containerized deployment}
+            \resumeItem{Implemented a Hiring Manager Rejection Simulator using \textbf{Gemini Pro}, increasing evaluation efficiency by \textbf{55\%} for \textbf{200+} analyzed resumes.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\href{https://eris-emergency-response-intelligent.vercel.app/}{\textbf{ERIS — Emergency Response System}} $|$ \href{https://github.com/MadhavS123-cloud/ERIS-Emergency-Response-Intelligent-System-}{GitHub}}{Mar. 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a modular microservice platform connecting patients and hospitals with real-time \textbf{Socket.io} updates and \textbf{REST APIs}}
+            \resumeItem{Developed a \textbf{Node.js} engine with \textbf{BullMQ} for dispatch and deployed the stack using \textbf{AWS/GCP} for high availability}
+            \resumeItem{Optimized emergency routing efficiency by \textbf{25\%} and reduced dispatch response time by \textbf{40\%} through dynamic capacity telemetry.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\href{https://financetracker-lemon.vercel.app/}{\textbf{Finora — Finance Tracker}} $|$ \href{https://github.com/MadhavS123-cloud/finance_tracker}{GitHub}}{Jan. 2026}
+          \resumeItemListStart
+            \resumeItem{Developed a comprehensive finance dashboard for tracking income/expenses with role-based access control and \textbf{PostgreSQL} integration}
+            \resumeItem{Implemented interactive visualizations using \textbf{Recharts} and optimized data fetching with \textbf{RESTful} best practices}
+            \resumeItem{Achieved a \textbf{95\%} performance score on Core Web Vitals and a \textbf{92\%} user satisfaction rating across \textbf{75+} active users.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\href{https://personal-portfolio-delta-ochre-13.vercel.app/}{\textbf{Personal Portfolio Website}}}{2025}
+          \resumeItemListStart
+            \resumeItem{Developed a highly interactive, responsive personal portfolio to showcase AI/ML projects and full-stack expertise}
+            \resumeItem{Implemented high-performance features like glassmorphism and smooth scroll with \textbf{GSAP} animations}
+            \resumeItem{Achieved a \textbf{99/100} Lighthouse accessibility score and reduced time-to-interactive by \textbf{30\%} for over \textbf{500+} unique visitors.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+      \textbf{Languages} {: JavaScript (React.js, Node.js), Python (FastAPI, Flask), SQL (PostgreSQL), HTML/CSS, Java, NoSQL}\vspace{2pt} \\
+     \textbf{Tools/Frameworks} {: RESTful APIs, Docker, Git, GitHub, AWS/GCP, Gemini Pro API, JWT, Tailwind CSS, Framer Motion, GSAP}}
+ \end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{ACHIEVEMENTS}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Competitive Programming Milestone}}{}
+          \resumeItemListStart
+            \resumeItem{Earned the \textbf{Diamond Badge} for solving over \textbf{1000+ problems} across LeetCode and CodeChef}
+            \resumeItem{Demonstrated strong problem-solving skills and consistency in Data Structures and Algorithms (DSA)}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
